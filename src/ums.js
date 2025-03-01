@@ -189,9 +189,9 @@ const UMS = () => {
   
 </nav>
 
-<div className="container" style={{backgroundColor: " #f9ecf2"}}>
+<div className="container w-100" style={{backgroundColor: " #f9ecf2", minWidth: "100vh"}}>
 
-<div className="container-fluid w-100 px-3 py-3 border border-3 rounded d-flex flex-wrap justify-content-between align-items-center" style={{ backgroundColor: "#e09ebd", minHeight: "100vh" }}>
+<div className="container-fluid w-100 px-3 py-3 border border-3 rounded d-flex flex-wrap justify-content-between align-items-center" style={{ backgroundColor: "#e09ebd", minWidth: "100vh" }}>
   <div className="d-flex flex-wrap gap-2">
     <button className={selectedItems.length === 0 ? "btn btn-danger btn-light disabled" : "btn btn-outline-danger btn-light"} onClick={deleteSelection}>
       <i className="fa fa-trash"></i>
