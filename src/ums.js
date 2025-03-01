@@ -191,14 +191,23 @@ const UMS = () => {
 
 <div className="container" style={{backgroundColor: " #f9ecf2"}}>
 
-        <div className="container-fluid px-3 py-3 border border-3 rounded" style={{backgroundColor: " #e09ebd"}}>
-          <div className="container-fluid">
-          <button className={selectedItems.length ===0 ? "btn btn-danger btn-light me-4 disabled" : "btn btn-outline-danger btn-light me-4" } onClick={deleteSelection} ><i className="fa fa-trash"></i></button>
-          <button className={selectedItems.length===0 ? "btn btn-warning btn-light me-4 disabled" : "btn btn-outline-warning btn-light me-4"} onClick={blockUser}><i className="fa fa-lock"></i></button>
-          <button className={selectedItems.length===0 ? "btn btn-success btn-light me-4 disabled" : "btn btn-outline-success btn-light me-4"} onClick={unblockUser}><i className="fa fa-unlock"></i></button>
-          <span className="d-flex justify-content-center" style={{fontSize: 24, fontFamily: "fancy" , color: "Black"}}>User Table</span>
-          </div>
-        </div>
+<div className="container-fluid px-3 py-3 border border-3 rounded d-flex flex-wrap justify-content-between align-items-center" style={{ backgroundColor: "#e09ebd" }}>
+  <div className="d-flex flex-wrap gap-2">
+    <button className={selectedItems.length === 0 ? "btn btn-danger btn-light disabled" : "btn btn-outline-danger btn-light"} onClick={deleteSelection}>
+      <i className="fa fa-trash"></i>
+    </button>
+    <button className={selectedItems.length === 0 ? "btn btn-warning btn-light disabled" : "btn btn-outline-warning btn-light"} onClick={blockUser}>
+      <i className="fa fa-lock"></i>
+    </button>
+    <button className={selectedItems.length === 0 ? "btn btn-success btn-light disabled" : "btn btn-outline-success btn-light"} onClick={unblockUser}>
+      <i className="fa fa-unlock"></i>
+    </button>
+  </div>
+  <span className="text-center flex-grow-1" style={{ fontSize: 24, fontFamily: "fancy", color: "Black" }}>
+    User Table
+  </span>
+</div>
+
         
 
         {/*Table User */}
